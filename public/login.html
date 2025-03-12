@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/login.css" rel="stylesheet">
+    <script src="javascripts/loginscript.js" defer></script>
+    <script src="javascripts/validation.js" defer></script>
+    <title>Handy Helper</title>
+    <!DOCTYPE html>
+    <html lang="en">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Job Posting Form</title>
+</head>
+<body>
+    <div class="header"></div>
+    <main>
+        
+        <div class="page-header">
+            <h1>Start volunteering today!</h1>
+            <p>Join others and become part of the growing network of opportunities.</p>
+            <h2>Are you an organization? Click the button below to sign up as an organization.</h2>
+            <a href="orgsignup.html" class="search-button">Sign up as an Organization</a>
+        </div>
+        <div class="container">
+            <link href="css/login2.css" rel="stylesheet">
+            <div class="form-container">
+                <div class="form login-form">
+                    <h1>Login</h1>
+                    <form id="loginform" enctype="multipart/form-data" onsubmit="return false;">
+                        <input type="text" id="login_username" name="username" placeholder="Username" required>
+                        <input type="password" id="login_password" name="password" placeholder="Password" required>
+                        <br><br>
+                        <button type="submit">Login</button>
+                    </form>
+
+                    <center>
+                        <p><b>Log-in or Sign-up with</b></p>
+                        <br>
+                        <a href="https://www.facebook.com"><Facebook><img src="assets/facebook.png" width="50" height="50"></Facebook></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.linkedin.com/"><Twitter><img src="assets/linkedin.png" width="50" height="50"></Twitter></a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://www.google.com"><Google><img src="assets/google.png" width="50" height="50"></Google></a>
+                    </center>
+                </div>
+                
+                <div class="form register-form">
+                    <h1>Need an Account?</h1>
+                    <h3>Sign-up now, it's easy.</h3>
+                    <form id="signupform" enctype="multipart/form-data" onsubmit="return validateForm();">
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="text" id="username" name="username" placeholder="Username" required>
+                        <input type="text" id="dob" name="dob" placeholder="MM/DD/YYYY" required>
+                        <input type="password" id="password" name="password" placeholder="Password" required>
+                        <input type="password" id="ReTnewPassword" name="newPassword" placeholder="Re-type Password" required>
+                        <br><br>
+                        <input type="checkbox" id="accept" name="acceptcheck">
+                        <label for="accept"> <small>I Acknowledge That I Have Read And Understand the <a href="https://www.savewalterwhite.com">Terms and Conditons.</a></small></label>
+                        <br><br>
+                        <button type="submit">Register</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

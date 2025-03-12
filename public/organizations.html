@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Find an Organization</title>
+    <link href="css/organizations.css" rel="stylesheet">
+    <script src="javascripts/loginscript.js" defer></script>
+</head>
+<body>
+<div class="header"></div>
+<main>
+    <div class="page-header">
+        <h1>Find an Organization</h1>
+        <p>Discover the power of community service and volunteering. Search below to find local volunteer opportunities
+            in your
+            area.</p>
+    </div>
+    <div class="search-form">
+
+        <span>within</span>
+        <div class="dropdown-container">
+            <select class="distance-dropdown">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option selected value="25">25</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </div>
+        <span>miles of</span>
+        <div class="locationbar-container">
+            <input class="location-input" placeholder="City/State/Zip/Postal Code" type="text">
+        </div>
+        <button class="search-btn">Search</button>
+    </div>
+    <div class="cards-container-wrapper">
+        <div class="cards-container" id="cards-container">
+            <!-- Cards will be dynamically inserted here -->
+        </div>
+    </div>
+</main>
+<script src="javascripts/organizations.js"></script>
+
+</body>
+</html>

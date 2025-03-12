@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Find an Organization</title>
+    <link href="css/index.css" rel="stylesheet">
+    <script src="javascripts/loginscript.js" defer></script>
+</head>
+<body>
+<div class="header"></div>
+<main>
+    <div class="page-header">
+        <h1>Welcome to Handy Helper, where you can find volunteering opportunities and organizations around the Bay Area.</h1>
+        <div class="button-wrapper">
+            <a href="organizations.html" class="search-button">Search for Organizations</a>
+        </div>
+    </div>
+
+    <div class="cards-container-wrapper">
+        <br>
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="assets/slideshow1.jpg" style="width:100%">
+              <div class="text">Plants trees to fight deforestation</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="assets/slideshow2.jpg" style="width:100%">
+              <div class="text">Participate at your local food drive</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="assets/slideshow3.jpg" style="width:100%">
+              <div class="text">Make a change and clean up your community</div>
+            </div>
+    
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="assets/slideshow4.jpg" style="width:100%">
+                <div class="text">Take pride in volunteering</div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <br>
+          <br>
+          <br>
+
+        <div class="opportunity-title">
+            <h2>Featured Opportunities</h2>
+        </div>
+
+        <div class="cards-container">
+            <div class="card">
+                <div class="image-container">
+                    <img alt="Profile Picture"
+                         src="assets/sf-marin-food-bank-logo.png">
+                </div>
+                <div class="content-container">
+                    <h3><b>SF Marin Food Bank</b></h3>
+                    <a class="search-btn" href="content.html" >Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-container">
+                    <img alt="Profile Picture"
+                         src="assets/hands-on-bay-area-logo.png">
+                </div>
+                <div class="content-container">
+                    <h3><b>HandsOn Bay
+                        Area</b></h3>
+                    <a class="search-btn" href="content.html" >Learn More</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="image-container">
+                    <img alt="Profile Picture"
+                         src="assets/one-treasure-island-logo.png">
+                </div>
+                <div class="content-container">
+                    <h3><b>One Treasure
+                        Island</b></h3>
+                    <a class="search-btn" href="content.html" >Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="opportunity-title">
+            <h2>Hear from others like you!</h2><br> 
+
+        </div>
+
+        <div class="container">
+        <div class="image-text-container clearfix">
+            <img src="assets/girlandkid.png" width="350" height="350">
+                <p> 
+                <b>Jasmine G.</b>
+                <br><br>
+                "Being a student volunteer is like opening a treasure chest of 
+                joy every time I work with kids. The laughter, curiosity, and 
+                endless energy they bring into every project make every moment 
+                truly special. It's not just about what I give; it's about the 
+                priceless lessons they teach me every day — the pure magic of 
+                seeing the world through the eyes of a child."</p>
+            <br>
+        </div>
+
+        <div class="image-text-container clearfix">
+            <img src="assets/guyandbox.png" width="350" height="350">
+                <p> 
+                <b>Mark J.</b>
+                <br><br>
+                "Contributing to our community through weekend food drives is my 
+                way of making a meaningful impact. Seeing the generosity and 
+                kindness of people coming together to support one another is truly 
+                heartwarming. Every weekend spent organizing and participating in food 
+                drives not only fills the shelves but also nourishes the spirit of 
+                our community. It's about more than just cans and boxes; it's about 
+                fostering a sense of unity and compassion that lasts well beyond the week.</p>
+            <br>
+        </div>
+
+        <div class="image-text-container clearfix">
+            <img src="assets/oldlady.png" width="350" height="350">
+                <p>
+                <b>Carol S.</b>
+                <br><br>
+                "As a retiree, volunteering to plant trees has become my newfound passion. 
+                Each tree symbolizes a legacy of growth and sustainability for future generations. 
+                Witnessing the transformation of bare landscapes into flourishing green 
+                spaces brings a sense of purpose and fulfillment to my retired days. 
+                It's a reminder that, even in retirement, we can continue to contribute 
+                to the well-being of the planet, leaving a lasting imprint of beauty 
+                and life for generations to come."</p>
+            <br>
+        </div>
+
+        
+        </div>
+
+        <div class="opportunity-title">
+            <h2><i>So what are you waiting for? Get started <a href="login.html">now!</a></i></h2>
+        </div>
+
+    
+
+    </div>
+    <script>
+        // Function to roll through images in slideshow
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+    
+
+    
+
+</main>
+</body>
+</html>

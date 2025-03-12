@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/orgjobposting.css" rel="stylesheet">
+    <script src="javascripts/loginscript.js" defer></script>
+    <script src="javascripts/orgjobpost.js" defer></script>
+    <title>Job Posting Form</title>
+</head>
+<body>
+    <div class="header"></div>
+    <main>
+            
+            <form id="createJobForm" enctype="multipart/form-data">
+                    <h2>Post a Volunteer Oppurtunity</h2>
+
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+
+                    <label for="Volunteer Oppurtunity Title">Volunteer Oppurtunity Title</label><br>
+                    <input type="text" id="VolTitle" name="Vol Title" required> <br>
+
+                    <label for="VoluPho">Volunteer Photo:</label><br>
+                    <input type="file" accept=".jpg,.jpeg,.png" id="VoluPho" name="VoluPho" required> <br>
+
+                    <label for="description">Details for the Oppurtunity:</label> <br>
+                    <textarea rows="4" cols="50" id="descript" name="description" required></textarea><br/> <br>
+
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street" required>
+            
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+            
+                    
+                    <div class="District">
+                        <label for="District">Bay Area Location:</label>
+                        <select id="District" aria-hidden="true"></i>
+                            <option value="placeholder">Select one</option>
+                        <option value="BV">Bayview</option>
+                        <option value="BH">Bernal Heights</option>
+                        <option value="CAS">Castro</option>
+                        <option value="CH">China Town</option>
+                        <option value="CR">Crocker Amazon</option>
+                        <option value="DH">Diamond Heights</option>
+                        <option value="DT">Downtown</option>
+                        <option value="EX">Excelsior</option>
+                        <option value="FD">Financial District</option>
+                        <option value="GP">Glen Park</option>
+                        <option value="GGP">Golden Gate Park</option>
+                        <option value="HA">Haight Ashbury</option>
+                        <option value="IR">Inner Richmond</option>
+                        <option value="IS">Inner Sunset</option>
+                        <option value="LS">Lakeshore</option>
+                        <option value="MA">Marina</option>
+                        <option value="MI">Mission</option>
+                        <option value="NB">Nob Hill</option>
+                        <option value="NV">Noe Valley</option>
+                        <option value="NB">North Beach</option>
+                        <option value="OV">Ocean View</option>
+                        <option value="OM">Outer Mission</option>
+                        <option value="OR">Outer Richmond</option>
+                        <option value="OS">Outer Sunset</option>
+                        <option value="PH">Pacific Heights</option>
+                        <option value="PS">Parkside</option>
+                        <option value="PH">Portero Hill</option>
+                        <option value="PR">Presidio</option>
+                        <option value="PH">Presidio Heights</option>
+                        <option value="RH">Russian Hill</option>
+                        <option value="SC">Seacliff</option>
+                        <option value="SM">South of Market</option>
+                        <option value="TSYBI">Treasure Island/Yerba Buena</option>
+                        <option value="TP">Twin Peaks</option>
+                        <option value="VV">Vistacoin Valley</option>
+                        <option value="WTP">West of Twin Peaks</option>
+                        <option value="WA">Western Addition</option>
+                    
+                        </select>
+                    </div>
+            
+                    <label for="zipcode">Zip Code:</label>
+                    <input type="number" id="zipcode" name="zipcode" minlength="5" maxlength="6" required>
+
+                    <button type="submit">Submit</button>
+            </form>
+            </main>
+            <script src="javascripts/jobvalidation.js" defer></script>
+            </body>
+            </html>
+

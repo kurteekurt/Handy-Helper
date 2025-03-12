@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Find an Organization</title>
+    <link href="css/faq.css" rel="stylesheet">
+    <script src="javascripts/loginscript.js" defer></script>
+</head>
+<body>
+<div class="header"></div>
+<main>
+    <div class="page-header">
+        <h1>Frequently asked questions</h1>
+    </div>
+
+    <div class="questions-answers-wrapper">
+        <div class="questions-answers-container">
+            <h2 class="question">What is your website all about?</h2>
+            <ul class="answer">
+                <li>Our website is dedicated to helping people easily and quickly find volunteer opportunities near them!
+                    We also make it easier for organizers to find the right volunteers for the job!</li>
+            </ul>
+
+            <h2 class="question">How does your website work?</h2>
+            <ul class="answer">
+                <li>Our website finds the closest volunteer opportunities near you posted by local organizers and groups.
+                    All you have to do is find an event you like and ask to volunteer!</li>
+            </ul>
+
+            <h2 class="question">How old do you have to be to volunteer?</h2>
+            <ul class="answer">
+                <li>You only have to be 13 years old to start volunteering!</li>
+            </ul>
+
+            <h2 class="question">Is your website free to use?</h2>
+            <ul class="answer">
+                <li>Yes, of course, it is!</li>
+            </ul>
+        </div>
+
+
+        <section class="contact">
+            <center>
+            <h2>Need to know more? Contact Us</h2>
+            
+            <form id="contactUs" action="#" onsubmit="return validateForm()">
+                <div class="input-box">
+                    <div class="input-feild feild">
+                        <input type="text" placeholder="Name" id="contactName" class="item" autocomplete="off">
+                    </div>
+                    <br>
+                    <div class="input-feild feild">
+                        <input type="text" placeholder="Email" id="contactEmail" class="item" autocomplete="off">
+                    </div>
+                    <br>
+                    <div class="input-feild feild">
+                        <input type="text" placeholder="Phone Number" id="contactNumber" class="item" autocomplete="off">
+                    </div>
+                    <br>
+                </div>
+                
+                <div class="textarea-feild feild">
+                    <textarea name="" id="message" cols="30" rows="10" placeholder="Can't wait to hear from you!" class="item" autocomplete="off "></textarea>
+                </div>
+                <br>
+                <button type="submit">Send Message</button><br><br>
+
+
+            </form>
+            </center>
+        </section>
+
+    </div>
+
+</main>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="javascripts/contactUs.js"></script>
+</body>
+</html>

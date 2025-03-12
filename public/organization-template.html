@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Organization Details</title>
+    <link href="/css/organization.css" rel="stylesheet">
+    <script src="/javascripts/organizationScript.js" defer></script>
+    <script src="/javascripts/loginscript.js" defer></script>
+</head>
+<body>
+<div class="header"></div>
+<main>
+    <div class="org-wrapper">
+        <div class="org-detail">
+            <div class="org-image-container">
+                <div class="logo-card">
+                    <img alt="Organization Logo" class="logo" id="org-logo">
+                </div>
+            </div>
+            <div class="detail-container">
+                <h2 id="org-name">Organization Name</h2>
+                <p id="org-description">Organization Description</p><br>
+
+                <!-- <a class="button-8" role="button" id="org-volunteer-link">Volunteer Opportunity</a> -->
+
+
+                <div class="location-contact-container">
+                    <h3>Location</h3>
+                    <a class="details-link" id="org-location" target="_blank">Organization Location</a>
+                    <h3>Contact</h3>
+                    <div class="contact-info"><span>Contact Name: </span><span id="org-contact-name"></span></div>
+                    <div class="contact-info"><span>Contact Phone: </span><span id="org-contact-phone"></span></div>
+                    <div class="contact-info"><span>Contact Email: </span><a class="details-link" id="org-contact-email"></a></div>
+                    <div class="contact-info"><span>Organization Website: </span><a class="details-link" id="org-website" target="_blank"></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
